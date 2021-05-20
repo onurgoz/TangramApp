@@ -1,6 +1,5 @@
 import 'package:dndproject/model/level_model.dart';
 import 'package:dndproject/model/shape_model.dart';
-import 'package:dndproject/pages/home_page.dart';
 import 'package:dndproject/pages/level_home_page.dart';
 import 'package:dndproject/pages/level_page.dart';
 
@@ -40,8 +39,6 @@ class _TargetWidgetState extends State<TargetWidget> {
         onAccept: (data) {
           if (data.id == widget.shapeModel.id) {
             setState(() {
-              print("obje yerleştirildi");
-
               data.isPlaced = true;
               data.targetColor = data.color;
               LevelPage.shapeCount++;
