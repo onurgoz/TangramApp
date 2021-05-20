@@ -1,7 +1,7 @@
-import 'package:dndproject/pages/hard_level_page.dart';
+import 'package:dndproject/pages/developers.dart';
 import 'package:dndproject/pages/home_page.dart';
-import 'package:dndproject/pages/low_level_page.dart';
-import 'package:dndproject/pages/medium_level_page.dart';
+import 'package:dndproject/pages/level_home_page.dart';
+import 'package:dndproject/pages/level_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,14 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Tangram',
+      debugShowCheckedModeBanner: false,
       initialRoute: HomePage.routeName,
+      theme: ThemeData.dark(),
       routes: {
         HomePage.routeName: (_) => HomePage(),
         HelpPage.routeName: (_) => HelpPage(),
-        LowLevelPage.routeName: (_) => LowLevelPage(),
-        MediumLevelPage.routeName: (_) => MediumLevelPage(),
-        HardLevelPage.routeName: (_) => HardLevelPage(),
+        LevelHomePage.routeName: (_) => LevelHomePage(),
+        LevelPage.routeName: (_) => LevelPage(),
+        DeveloperPage.routeName: (_) => DeveloperPage(),
       },
     );
   }

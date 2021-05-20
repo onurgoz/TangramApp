@@ -3,7 +3,7 @@ class PositionModel {
 
   setPosition(double x, double y) {
     this._x = x;
-    this._y = y;
+    this._y = y - 80;
   }
 
   double get x {

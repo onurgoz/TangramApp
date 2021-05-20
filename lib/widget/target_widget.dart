@@ -1,7 +1,8 @@
-import 'package:dndproject/data/levels.dart';
 import 'package:dndproject/model/level_model.dart';
 import 'package:dndproject/model/shape_model.dart';
-import 'package:dndproject/pages/low_level_page.dart';
+import 'package:dndproject/pages/home_page.dart';
+import 'package:dndproject/pages/level_home_page.dart';
+import 'package:dndproject/pages/level_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -43,19 +44,42 @@ class _TargetWidgetState extends State<TargetWidget> {
 
               data.isPlaced = true;
               data.targetColor = data.color;
-              LowLevelPage.shapeCount++;
-              if (LowLevelPage.levelOfCount == LowLevelPage.shapeCount) {
-                LevelModel.currentLevel++;
+              LevelPage.shapeCount++;
 
-                Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(builder: (context) => LowLevelPage()),
-                    ModalRoute.withName("/"));
+              if (checkLevel()) {
+                nextLevel();
+
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => LevelHomePage()));
+                if (checkLastLevel()) {
+                  LevelModel.currentLevel = 0;
+                  Navigator.pop(context);
+                }
               }
             });
           }
         },
       ),
     );
+  }
+
+  void nextLevel() {
+    if (LevelModel.currentLevel != 8) {
+      LevelModel.currentLevel++;
+    }
+  }
+
+  bool checkLevel() {
+    if (LevelPage.shapeOfCount == LevelPage.shapeCount) {
+      return true;
+    }
+    return false;
+  }
+
+  bool checkLastLevel() {
+    if (LevelModel.currentLevel == 8 && LevelPage.shapeCount == 6) {
+      return true;
+    }
+    return false;
   }
 }
