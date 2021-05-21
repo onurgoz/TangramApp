@@ -21,37 +21,37 @@ Instructions on how to use them in your own application are linked below.
 
 ## Screenshots
 ### Home Page
-![Home Page](images/home.png?raw=true "Home Page")
+<img src="images/home.png" width="200">
 
 ### Developer Page
-![Home Page](images/developer.png?raw=true "Developer Page")
+<img src="images/developer.png" width="200">
 
 ### Help Page
-![Home Page](images/help.png?raw=true "Help Page")
+<img src="images/help.png" width="200">
 
 ### Level 1
-![Home Page](images/level1.png?raw=true "Level 1")
+<img src="images/level1.png" width="200">
 
 ### Level 2
-![Home Page](images/level2.png?raw=true "Level 2")
+<img src="images/level2.png" width="200">
 
 ### Level 3
-![Home Page](images/level3.png?raw=true "Level 3")
+<img src="images/level3.png" width="200">
 
 ### Level 4
-![Home Page](images/level4.png?raw=true "Level 4")
+<img src="images/level4.png" width="200">
 
 ### Level 5
-![Home Page](images/level5.png?raw=true "Level 5")
+<img src="images/level5.png" width="200">
 
 ### Level 6
-![Home Page](images/level6.png?raw=true "Level 6")
+<img src="images/level6.png" width="200">
 
 ### Level 7
-![Home Page](images/level7.png?raw=true "Level 7")
+<img src="images/level7.png" width="200">
 
 ### Level 8
-![Home Page](images/level8.png?raw=true "Level 8")
+<img src="images/level8.png" width="200">
 
 ### Level 9
-![Home Page](images/level9.png?raw=true "Level 9")
+<img src="images/level9.png" width="200">
