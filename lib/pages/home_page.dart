@@ -32,13 +32,13 @@ class HomePage extends StatelessWidget {
               ),
               MenuItemWidget(
                 color: Colors.grey[700],
-                name: "Help",
-                routeName: HelpPage.routeName,
+                name: "Developer",
+                routeName: DeveloperPage.routeName,
               ),
               MenuItemWidget(
                 color: Colors.grey[700],
-                name: "Developer",
-                routeName: DeveloperPage.routeName,
+                name: "Help",
+                routeName: HelpPage.routeName,
               ),
             ],
           ),

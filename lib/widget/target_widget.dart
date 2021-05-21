@@ -2,12 +2,10 @@ import 'package:dndproject/model/level_model.dart';
 import 'package:dndproject/model/shape_model.dart';
 import 'package:dndproject/pages/level_home_page.dart';
 import 'package:dndproject/pages/level_page.dart';
-
 import 'package:flutter/material.dart';
 
 class TargetWidget extends StatefulWidget {
   final ShapeModel shapeModel;
-
   const TargetWidget({Key key, @required this.shapeModel}) : super(key: key);
 
   @override

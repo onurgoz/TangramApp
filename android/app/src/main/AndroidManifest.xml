@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dndproject">
    <application
-        android:label="dndproject"
+        android:label="Tangram App"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

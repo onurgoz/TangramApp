@@ -1,16 +1,20 @@
-# dndproject
+# Tangram App
 
-A new Flutter project.
+## What is a TANGRAM?
 
-## Getting Started
+Tangram is a creative intelligence game on the basis of creating various forms by combining seven geometrically shaped pieces made of stone, bone, plastic or wood.
 
-This project is a starting point for a Flutter application.
+##How do i play
 
-A few resources to get you started if this is your first Flutter project:
+You can level up by placing the pieces given for placement in appropriate places.
+There are 9 levels, 3 easy, 3 medium and 3 hard.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Plugins
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tangram App is currently extended with the following plugins.
+Instructions on how to use them in your own application are linked below.
+
+| Plugin | README |
+| ------ | ------ |
+| flutter_launcher_name | [flutter_launcher_name README](https://github.com/daisuke-fukuda/flutter_launcher_name/blob/master/README.md)|
+| url_launcher | [flutter_launcher_name README](https://github.com/flutter/plugins/blob/master/README.md) |

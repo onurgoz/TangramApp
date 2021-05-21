@@ -9,19 +9,25 @@ class LevelHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: BackButton(
-          onPressed: () {
-            LevelModel.currentLevel = 0;
-            Navigator.pop(context);
-          },
+    return WillPopScope(
+        child: Scaffold(
+          appBar: AppBar(
+            leading: BackButton(
+              onPressed: () {
+                LevelModel.currentLevel = 0;
+                Navigator.pop(context);
+              },
+            ),
+            title: Text(appBarText),
+            centerTitle: true,
+            automaticallyImplyLeading: false,
+          ),
+          body: LevelPage(),
         ),
-        title: Text(appBarText),
-        centerTitle: true,
-        automaticallyImplyLeading: false,
-      ),
-      body: LevelPage(),
-    );
+        onWillPop: () async {
+          LevelModel.currentLevel = 0;
+          Navigator.pop(context);
+          return true;
+        });
   }
 }
